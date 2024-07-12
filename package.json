@@ -5,10 +5,7 @@
   "description": "Tools for Serv00",
   "author": "leex <dev@leex.me>",
   "license": "MIT",
-  "keywords": [],
-  "main": "index.js",
   "scripts": {
-    "test": "vitest",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
@@ -17,8 +14,7 @@
     "eslint": "^9.6.0",
     "lint-staged": "^15.2.7",
     "puppeteer": "^22.13.0",
-    "simple-git-hooks": "^2.11.1",
-    "vitest": "^2.0.2"
+    "simple-git-hooks": "^2.11.1"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"

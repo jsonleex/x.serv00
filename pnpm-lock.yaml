@@ -10,7 +10,7 @@ importers:
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^2.22.0
-        version: 2.22.0(@vue/compiler-sfc@3.4.31)(eslint@9.6.0)(typescript@5.5.3)(vitest@2.0.2(@types/node@20.14.10))
+        version: 2.22.0(@vue/compiler-sfc@3.4.31)(eslint@9.6.0)(typescript@5.5.3)(vitest@2.0.2)
       eslint:
         specifier: ^9.6.0
         version: 9.6.0
@@ -23,9 +23,6 @@ importers:
       simple-git-hooks:
         specifier: ^2.11.1
         version: 2.11.1
-      vitest:
-        specifier: ^2.0.2
-        version: 2.0.2(@types/node@20.14.10)
 
 packages:
 
@@ -2250,8 +2247,9 @@ snapshots:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
+    optional: true
 
-  '@antfu/eslint-config@2.22.0(@vue/compiler-sfc@3.4.31)(eslint@9.6.0)(typescript@5.5.3)(vitest@2.0.2(@types/node@20.14.10))':
+  '@antfu/eslint-config@2.22.0(@vue/compiler-sfc@3.4.31)(eslint@9.6.0)(typescript@5.5.3)(vitest@2.0.2)':
     dependencies:
       '@antfu/install-pkg': 0.3.3
       '@clack/prompts': 0.7.0
@@ -2276,7 +2274,7 @@ snapshots:
       eslint-plugin-toml: 0.11.1(eslint@9.6.0)
       eslint-plugin-unicorn: 54.0.0(eslint@9.6.0)
       eslint-plugin-unused-imports: 4.0.0(@typescript-eslint/eslint-plugin@8.0.0-alpha.40(@typescript-eslint/parser@8.0.0-alpha.40(eslint@9.6.0)(typescript@5.5.3))(eslint@9.6.0)(typescript@5.5.3))(eslint@9.6.0)
-      eslint-plugin-vitest: 0.5.4(@typescript-eslint/eslint-plugin@8.0.0-alpha.40(@typescript-eslint/parser@8.0.0-alpha.40(eslint@9.6.0)(typescript@5.5.3))(eslint@9.6.0)(typescript@5.5.3))(eslint@9.6.0)(typescript@5.5.3)(vitest@2.0.2(@types/node@20.14.10))
+      eslint-plugin-vitest: 0.5.4(@typescript-eslint/eslint-plugin@8.0.0-alpha.40(@typescript-eslint/parser@8.0.0-alpha.40(eslint@9.6.0)(typescript@5.5.3))(eslint@9.6.0)(typescript@5.5.3))(eslint@9.6.0)(typescript@5.5.3)(vitest@2.0.2)
       eslint-plugin-vue: 9.27.0(eslint@9.6.0)
       eslint-plugin-yml: 1.14.0(eslint@9.6.0)
       eslint-processor-vue-blocks: 0.1.2(@vue/compiler-sfc@3.4.31)(eslint@9.6.0)
@@ -2465,10 +2463,13 @@ snapshots:
       '@jridgewell/set-array': 1.2.1
       '@jridgewell/sourcemap-codec': 1.5.0
       '@jridgewell/trace-mapping': 0.3.25
+    optional: true
 
-  '@jridgewell/resolve-uri@3.1.2': {}
+  '@jridgewell/resolve-uri@3.1.2':
+    optional: true
 
-  '@jridgewell/set-array@1.2.1': {}
+  '@jridgewell/set-array@1.2.1':
+    optional: true
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
@@ -2476,6 +2477,7 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
+    optional: true
 
   '@jsdevtools/ez-spawn@3.0.4':
     dependencies:
@@ -2798,25 +2800,30 @@ snapshots:
       '@vitest/utils': 2.0.2
       chai: 5.1.1
       tinyrainbow: 1.2.0
+    optional: true
 
   '@vitest/pretty-format@2.0.2':
     dependencies:
       tinyrainbow: 1.2.0
+    optional: true
 
   '@vitest/runner@2.0.2':
     dependencies:
       '@vitest/utils': 2.0.2
       pathe: 1.1.2
+    optional: true
 
   '@vitest/snapshot@2.0.2':
     dependencies:
       '@vitest/pretty-format': 2.0.2
       magic-string: 0.30.10
       pathe: 1.1.2
+    optional: true
 
   '@vitest/spy@2.0.2':
     dependencies:
       tinyspy: 3.0.0
+    optional: true
 
   '@vitest/utils@2.0.2':
     dependencies:
@@ -2824,6 +2831,7 @@ snapshots:
       estree-walker: 3.0.3
       loupe: 3.1.1
       tinyrainbow: 1.2.0
+    optional: true
 
   '@vue/compiler-core@3.4.31':
     dependencies:
@@ -2898,7 +2906,8 @@ snapshots:
 
   array-union@2.1.0: {}
 
-  assertion-error@2.0.1: {}
+  assertion-error@2.0.1:
+    optional: true
 
   ast-types@0.13.4:
     dependencies:
@@ -2966,7 +2975,8 @@ snapshots:
 
   builtin-modules@3.3.0: {}
 
-  cac@6.7.14: {}
+  cac@6.7.14:
+    optional: true
 
   call-me-maybe@1.0.2: {}
 
@@ -2981,6 +2991,7 @@ snapshots:
       deep-eql: 5.0.2
       loupe: 3.1.1
       pathval: 2.0.0
+    optional: true
 
   chalk@2.4.2:
     dependencies:
@@ -3001,7 +3012,8 @@ snapshots:
 
   character-reference-invalid@1.1.4: {}
 
-  check-error@2.1.1: {}
+  check-error@2.1.1:
+    optional: true
 
   chromium-bidi@0.6.0(devtools-protocol@0.0.1299070):
     dependencies:
@@ -3088,7 +3100,8 @@ snapshots:
     dependencies:
       ms: 2.1.2
 
-  deep-eql@5.0.2: {}
+  deep-eql@5.0.2:
+    optional: true
 
   deep-is@0.1.4: {}
 
@@ -3158,6 +3171,7 @@ snapshots:
       '@esbuild/win32-arm64': 0.21.5
       '@esbuild/win32-ia32': 0.21.5
       '@esbuild/win32-x64': 0.21.5
+    optional: true
 
   escalade@3.1.2: {}
 
@@ -3350,13 +3364,13 @@ snapshots:
     optionalDependencies:
       '@typescript-eslint/eslint-plugin': 8.0.0-alpha.40(@typescript-eslint/parser@8.0.0-alpha.40(eslint@9.6.0)(typescript@5.5.3))(eslint@9.6.0)(typescript@5.5.3)
 
-  eslint-plugin-vitest@0.5.4(@typescript-eslint/eslint-plugin@8.0.0-alpha.40(@typescript-eslint/parser@8.0.0-alpha.40(eslint@9.6.0)(typescript@5.5.3))(eslint@9.6.0)(typescript@5.5.3))(eslint@9.6.0)(typescript@5.5.3)(vitest@2.0.2(@types/node@20.14.10)):
+  eslint-plugin-vitest@0.5.4(@typescript-eslint/eslint-plugin@8.0.0-alpha.40(@typescript-eslint/parser@8.0.0-alpha.40(eslint@9.6.0)(typescript@5.5.3))(eslint@9.6.0)(typescript@5.5.3))(eslint@9.6.0)(typescript@5.5.3)(vitest@2.0.2):
     dependencies:
       '@typescript-eslint/utils': 7.16.0(eslint@9.6.0)(typescript@5.5.3)
       eslint: 9.6.0
     optionalDependencies:
       '@typescript-eslint/eslint-plugin': 8.0.0-alpha.40(@typescript-eslint/parser@8.0.0-alpha.40(eslint@9.6.0)(typescript@5.5.3))(eslint@9.6.0)(typescript@5.5.3)
-      vitest: 2.0.2(@types/node@20.14.10)
+      vitest: 2.0.2
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -3475,6 +3489,7 @@ snapshots:
   estree-walker@3.0.3:
     dependencies:
       '@types/estree': 1.0.5
+    optional: true
 
   esutils@2.0.3: {}
 
@@ -3572,7 +3587,8 @@ snapshots:
 
   get-east-asian-width@1.2.0: {}
 
-  get-func-name@2.0.2: {}
+  get-func-name@2.0.2:
+    optional: true
 
   get-stream@5.2.0:
     dependencies:
@@ -3813,6 +3829,7 @@ snapshots:
   loupe@3.1.1:
     dependencies:
       get-func-name: 2.0.2
+    optional: true
 
   lru-cache@6.0.0:
     dependencies:
@@ -4010,7 +4027,8 @@ snapshots:
 
   pathe@1.1.2: {}
 
-  pathval@2.0.0: {}
+  pathval@2.0.0:
+    optional: true
 
   pend@1.2.0: {}
 
@@ -4165,6 +4183,7 @@ snapshots:
       '@rollup/rollup-win32-ia32-msvc': 4.18.1
       '@rollup/rollup-win32-x64-msvc': 4.18.1
       fsevents: 2.3.3
+    optional: true
 
   run-parallel@1.2.0:
     dependencies:
@@ -4190,7 +4209,8 @@ snapshots:
 
   shebang-regex@3.0.0: {}
 
-  siginfo@2.0.0: {}
+  siginfo@2.0.0:
+    optional: true
 
   signal-exit@3.0.7: {}
 
@@ -4257,9 +4277,11 @@ snapshots:
 
   stable-hash@0.0.4: {}
 
-  stackback@0.0.2: {}
+  stackback@0.0.2:
+    optional: true
 
-  std-env@3.7.0: {}
+  std-env@3.7.0:
+    optional: true
 
   streamx@2.18.0:
     dependencies:
@@ -4342,13 +4364,17 @@ snapshots:
 
   through@2.3.8: {}
 
-  tinybench@2.8.0: {}
+  tinybench@2.8.0:
+    optional: true
 
-  tinypool@1.0.0: {}
+  tinypool@1.0.0:
+    optional: true
 
-  tinyrainbow@1.2.0: {}
+  tinyrainbow@1.2.0:
+    optional: true
 
-  tinyspy@3.0.0: {}
+  tinyspy@3.0.0:
+    optional: true
 
   to-fast-properties@2.0.0: {}
 
@@ -4417,13 +4443,13 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vite-node@2.0.2(@types/node@20.14.10):
+  vite-node@2.0.2:
     dependencies:
       cac: 6.7.14
       debug: 4.3.5
       pathe: 1.1.2
       tinyrainbow: 1.2.0
-      vite: 5.3.3(@types/node@20.14.10)
+      vite: 5.3.3
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -4433,17 +4459,18 @@ snapshots:
       - sugarss
       - supports-color
       - terser
+    optional: true
 
-  vite@5.3.3(@types/node@20.14.10):
+  vite@5.3.3:
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.39
       rollup: 4.18.1
     optionalDependencies:
-      '@types/node': 20.14.10
       fsevents: 2.3.3
+    optional: true
 
-  vitest@2.0.2(@types/node@20.14.10):
+  vitest@2.0.2:
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@vitest/expect': 2.0.2
@@ -4461,11 +4488,9 @@ snapshots:
       tinybench: 2.8.0
       tinypool: 1.0.0
       tinyrainbow: 1.2.0
-      vite: 5.3.3(@types/node@20.14.10)
-      vite-node: 2.0.2(@types/node@20.14.10)
+      vite: 5.3.3
+      vite-node: 2.0.2
       why-is-node-running: 2.3.0
-    optionalDependencies:
-      '@types/node': 20.14.10
     transitivePeerDependencies:
       - less
       - lightningcss
@@ -4474,6 +4499,7 @@ snapshots:
       - sugarss
       - supports-color
       - terser
+    optional: true
 
   vue-eslint-parser@9.4.3(eslint@9.6.0):
     dependencies:
@@ -4496,6 +4522,7 @@ snapshots:
     dependencies:
       siginfo: 2.0.0
       stackback: 0.0.2
+    optional: true
 
   word-wrap@1.2.5: {}
 

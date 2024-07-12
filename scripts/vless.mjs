@@ -5,8 +5,8 @@ import WebSocket from 'ws'
 const logcb = (...args) => console.log.bind(console, ...args)
 const errcb = (...args) => console.error.bind(console, ...args)
 
-const uuid = (process.env.UUID || '').replace(/-/g, '')
-const port = (process.env.PORT || 3000)
+const uuid = (process.env.UUID || 'f38d2f75-4011-11ef-b986-3cecef1fbce8').replace(/-/g, '')
+const port = (process.env.PORT || 9901)
 
 const wss = new WebSocket.Server({ port }, logcb('server listening:', port))
 
