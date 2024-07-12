@@ -1,0 +1,28 @@
+{
+  "name": "x.serv00",
+  "version": "1.0.0",
+  "description": "",
+  "author": "leex <dev@leex.me>",
+  "license": "MIT",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.22.0",
+    "eslint": "^9.6.0",
+    "lint-staged": "^15.2.7",
+    "puppeteer": "^22.13.0",
+    "simple-git-hooks": "^2.11.1",
+    "vitest": "^2.0.2"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}

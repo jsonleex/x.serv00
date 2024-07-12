@@ -1,0 +1,32 @@
+name: Auto login
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '38 10 * * 6' # every Saturday at 10:38
+
+env:
+  SERV00_URL: ${{ secrets.SERV00_URL }}
+  SERV00_USERNAME: ${{ secrets.SERV00_USERNAME }}
+  SERV00_PASSWORD: ${{ secrets.SERV00_PASSWORD }}
+
+jobs:
+  login:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Auto login
+        run: node scripts/login.mjs
