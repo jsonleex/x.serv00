@@ -1,7 +1,7 @@
 {
   "name": "x.serv00",
   "version": "1.0.0",
-  "packageManager": "pnpm@9.5.0+sha256.dbdf5961c32909fb030595a9daa1dae720162e658609a8f92f2fa99835510ca5",
+  "packageManager": "pnpm@9.5.0",
   "description": "Tools for Serv00",
   "author": "leex <dev@leex.me>",
   "license": "MIT",
@@ -10,10 +10,10 @@
     "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.22.0",
-    "eslint": "^9.6.0",
+    "@antfu/eslint-config": "^2.23.0",
+    "eslint": "^9.7.0",
     "lint-staged": "^15.2.7",
-    "puppeteer": "^22.13.0",
+    "puppeteer": "^22.13.1",
     "simple-git-hooks": "^2.11.1"
   },
   "simple-git-hooks": {
