@@ -25,6 +25,12 @@ jobs:
         with:
           cache: pnpm
 
+      - name: Cache for Puppeteer
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/puppeteer
+          key: puppeteer-${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+
       - name: Install dependencies
         run: pnpm install
 
